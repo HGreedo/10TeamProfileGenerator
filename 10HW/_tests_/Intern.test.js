@@ -1,0 +1,10 @@
+const Intern = require("../directory/Intern");
+test("Can set Intern's School", () => { const testSchool = "UofArizona"; const expectation = new Intern("Foo", 1, testSchool);
+    expect(expectation.school).toBe(testSchool);
+});
+test("Using getRole() can return \"Intern\"", () => { const testIntern = "Intern"; const expectation = new Intern("Foo", 1, "UofArizona");
+    expect(expectation.getRole()).toBe(testIntern);
+});
+test("Using getSchool() can return Intern's school", () => { const testSchool = "UofArizona"; const expectation = new IntersectionObserverEntry("Foo", 1, testSchool);
+    expect(expectation.getSchool()).toBe(testSchool);
+});
